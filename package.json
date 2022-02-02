@@ -1,0 +1,35 @@
+{
+  "name": "school",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:eslint": "eslint . --ignore-path=.gitignore",
+    "lint:prettier": "prettier --check . --ignore-path=.gitignore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/q-nick/school.git"
+  },
+  "eslintConfig": {
+    "extends": "turbocharge",
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "unicorn/prevent-abbreviations": 0,
+      "no-console": 0,
+      "no-alert": 0
+    }
+  },
+  "prettier": "eslint-config-turbocharge/prettier",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/q-nick/school/issues"
+  },
+  "homepage": "https://github.com/q-nick/school#readme",
+  "dependencies": {
+    "eslint-config-turbocharge": "^0.1.8"
+  }
+}
